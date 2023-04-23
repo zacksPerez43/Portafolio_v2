@@ -1,0 +1,250 @@
+@import url(normalice.css);
+
+* {
+    font-family: "Segoe UI", Arial, sans-serif;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(29, 30, 32);
+    color: rgb(218, 218, 219);
+}
+
+.contenedor{
+    display: grid;
+    margin-right: 12vw;
+    margin-left: 12vw;
+}
+
+.menu-contenedor{
+    margin-top: 3vh;
+    display: grid;
+    grid-template-areas: 
+    "titulo enlaces";
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-titulo{
+    grid-area: titulo;
+}
+
+.menu-lista{
+    grid-area: enlaces;
+}
+
+.menu-contenedor .menu-lista{
+    display: flex;
+}
+
+.menu-contenedor .menu-titulo .menu__titulo{
+    font-size: 1.8vw;
+    font-weight: bold;
+}
+
+.menu-contenedor .menu-lista .menu__item{
+    font-size: 1.2vw;
+    margin-left: 2vw;
+}
+
+.menu-contenedor .menu-lista .menu__item a{
+    color: rgb(218, 218, 219);
+}
+
+/* Contenido información */
+
+.principal-grilla{
+    margin-top: 15vh;
+    margin-right: 10vw;
+    margin-left: 10vw;
+    display: grid;
+    grid-template-areas: 
+    "informacion"
+    "redes"
+    "habilidades";
+    row-gap: 10vh;
+}
+
+.contenido-redes{
+    grid-area: redes;
+}
+
+.contenido-habilidades{
+    grid-area: habilidades;
+}
+
+.contenido-informacion{
+    grid-area: informacion;
+    display: grid;
+    grid-template-areas: 
+    "imagen nombre"
+    "imagen descripcion";
+    column-gap: 3vw;
+}
+
+.contenido-nombre{
+    grid-area: nombre;
+}
+
+.contenido-descripcion{
+    grid-area: descripcion;
+}
+
+.contenido-imagen{
+    grid-area: imagen;
+}
+
+.contenido__descripcion{
+    font-size: 1.2vw;
+    color: rgb(155, 156, 157);
+    letter-spacing: 1px;
+}
+
+.contenido-redes{
+    display: grid;
+    align-items: end;
+}
+
+.redes-tarjetas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.redes-tarjetas .tarjeta {
+    display: grid;
+    grid-template-areas:
+        "imagen textos";
+    column-gap: 1.5vw;
+    align-items: center;
+}
+
+.redes-tarjetas .tarjeta-imagen {
+    display: grid;
+    grid-area: imagen;
+    
+}
+
+.redes-tarjetas .tarjeta-textos {
+    display: grid;
+    grid-area: textos;
+}
+
+.redes-tarjetas .tarjeta-textos h4 {
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+
+.redes-tarjetas .tarjeta-textos a {
+    font-size: 1.2vw;
+    color: rgb(155, 156, 157);
+
+}
+
+/* CONTENIDO HABILIDADES */
+
+.habilidades-grilla{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.habilidad .habilidad__titulo{
+    font-size: 1.5vw;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .contenedor{
+        margin: 0;
+    }
+
+    .menu-contenedor{
+        display: grid;
+        grid-template-areas: 
+        "titulo" 
+        "enlaces";
+        justify-content: start;
+        margin-left: 5vw;
+        row-gap: 5vh;
+    }
+
+    .menu-contenedor .menu-titulo .menu__titulo{
+        font-size: 8vw;
+    }
+    
+    .menu-contenedor .menu-lista .menu__item{
+        font-size: 5vw;
+        margin-left: 3vw;
+    }
+
+    .principal-grilla{
+        margin-top: 10vh;
+        row-gap: 5vh;
+    }
+
+    .contenido-informacion{
+        grid-template-areas: 
+        "imagen"
+        "nombre"
+        "descripcion";
+    }
+
+    .contenido__nombre{
+        font-size: 8vw;
+    }
+
+    .contenido__descripcion{
+        font-size: 5vw;
+    }
+
+    .contenido-imagen{
+        display: none;
+    }
+    
+    .contenido-redes{
+        display: grid;
+        align-items: end;
+    }
+    
+    .redes-tarjetas {
+        display: flex;
+        justify-content: start;
+        column-gap: 2vw;
+        align-items: center;
+    }
+
+    .redes-tarjetas .tarjeta-imagen{
+        font-size: 4vw;
+    }
+    
+    .redes-tarjetas .tarjeta-textos {
+        display: none;
+    }
+
+    .habilidades-grilla{
+        display: flex;
+        align-items: center;
+        column-gap: 20vw;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .habilidad .habilidad-titulo{
+        display: grid;
+        justify-content: center;
+    }
+
+    .habilidad .habilidad__titulo{
+        font-size: 5vw;
+    }
+
+    .habilidad .habilidad__imagen{
+        height: 15vh;
+        width: auto;
+    }
+
+
+}
