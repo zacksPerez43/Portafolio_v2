@@ -6,405 +6,353 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Document</title>
 </head>
 
 <body>
 
-    <div class="contenedor">
+    <header class="menu">
+        <nav class="menu-contenedor">
+            <div class="menu-titulo">
+                <p class="menu__titulo">Jean's Portfolio</p>
+            </div>
+            <ul class="menu-lista">
+                <li class="menu__item"><a href="">Inicio</a></li>
+                <li class="menu__item"><a href="">Proyectos</a></li>
+                <li class="menu__item"><a href="">Contáctame</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <header class="menu">
-            <nav class="menu-contenedor">
-                <div class="menu-titulo">
-                    <p class="menu__titulo">Jean's Portfolio</p>
+    <section class="pagina-principal">
+        <div class="principal-grilla">
+
+            <div class="contenido-informacion">
+                <div class="contenido-nombre">
+                    <h1 class="contenido__nombre animate__animated animate__bounceInDown">Hola, soy Jean 👋</h1>
                 </div>
-                <ul class="menu-lista">
-                    <li class="menu__item"><a href="">Inicio</a></li>
-                    <li class="menu__item"><a href="">Proyectos</a></li>
-                    <li class="menu__item"><a href="">Contáctame</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <section class="pagina-principal">
-            <div class="principal-grilla">
-
-                <div class="contenido-informacion">
-                    <div class="contenido-nombre">
-                        <h1 class="contenido__nombre">Hola, soy Jean</h1>
-                    </div>
-                    <div class="contenido-descripcion">
-                        <p class="contenido__descripcion">
-                            Soy estudiante de noveno semestre y me gusta la programación en general. He desarrollado
-                            proyectos universitarios en donde he usado distintos lenguajes de programacion, herramientas
-                            y metodologías. Para más información, haz click acá
-                        </p>
-                    </div>
-                    <div class="contenido-imagen">
-                        <img src="/images/user_profile.jpg" alt="" class="contenido__imagen">
-                    </div>
+                <div class="contenido-descripcion">
+                    <p class="contenido__descripcion animate__animated animate__fadeIn">
+                        Soy estudiante de noveno semestre y me gusta la programación en general. He desarrollado
+                        proyectos universitarios en donde he usado distintos lenguajes de programacion, herramientas
+                        y metodologías. Para más información, haz click acá
+                    </p>
                 </div>
+                <div class="contenido-imagen">
+                    <img src="/images/user_profile.jpg" alt="" class="contenido__imagen">
+                </div>
+            </div>
 
-                <div class="contenido-redes">
-                    <div class="redes-tarjetas">
-
-                        <div class="tarjeta">
-                            <div class="tarjeta-imagen">
-                                <i class="fa-brands fa-github fa-2x"></i>
-                            </div>
-                            <div class="tarjeta-textos">
-                                <h4><span class="color-verde"> <a href="https://github.com/zacksPerez43"
-                                            class="pagina-link">@zacksPerez43 <i
-                                                class="fa-solid fa-arrow-up-right-from-square"></i></a></span></h4>
-
-                            </div>
+            <div class="contenido-habilidades">
+                <div class="habilidades-grilla">
+                    <div class="habilidad">
+                        <div class="habilidad-titulo">
+                            <h1 class="habilidad__titulo">Python</h1>
                         </div>
-
-                        <div class="tarjeta">
-                            <div class="tarjeta-imagen">
-                                <i class="fa-brands fa-instagram fa-2x"></i>
-                            </div>
-                            <div class="tarjeta-textos">
-                                <h4><span class="color-verde"> <a
-                                            href="https://www.instagram.com/kotscarlos/">Kotscarlos
-                                            <i class="fa-solid fa-arrow-up-right-from-square"></i> </a></span></h4>
-
-                            </div>
-                        </div>
-
-                        <div class="tarjeta">
-                            <div class="tarjeta-imagen">
-                                <i class="fa-brands fa-whatsapp fa-2x"></i>
-                            </div>
-                            <div class="tarjeta-textos">
-                                <h4><span class="color-verde"><a
-                                            href="https://api.whatsapp.com/send?phone=573113109661">Whatsapp<i
-                                                class="fa-solid fa-arrow-up-right-from-square"></i></a></span></h4>
-
-                            </div>
+                        <div class="habilidad-imagen">
+                            <img class="habilidad__imagen" src="images/lenguajes/python.png" alt="">
                         </div>
                     </div>
-                </div>
 
-                <div class="contenido-habilidades">
-                    <div class="habilidades-grilla">
-                        <div class="habilidad">
-                            <div class="habilidad-titulo">
-                                <h1 class="habilidad__titulo">Python</h1>
-                            </div>
-                            <div class="habilidad-imagen">
-                                <img class="habilidad__imagen" src="images/lenguajes/python.png" alt="">
-                            </div>
+                    <div class="habilidad">
+                        <div class="habilidad-titulo">
+                            <h1 class="habilidad__titulo">Java</h1>
                         </div>
-
-                        <div class="habilidad">
-                            <div class="habilidad-titulo">
-                                <h1 class="habilidad__titulo">Java</h1>
-                            </div>
-                            <div class="habilidad-imagen">
-                                <img class="habilidad__imagen" src="images/lenguajes/java.png" alt="">
-                            </div>
+                        <div class="habilidad-imagen">
+                            <img class="habilidad__imagen" src="images/lenguajes/java.png" alt="">
                         </div>
+                    </div>
 
-                        <div class="habilidad">
-                            <div class="habilidad-titulo">
-                                <h1 class="habilidad__titulo">JavaScript</h1>
-                            </div>
-                            <div class="habilidad-imagen">
-                                <img class="habilidad__imagen" src="images/lenguajes/javascript.png" alt="">
-                            </div>
+                    <div class="habilidad">
+                        <div class="habilidad-titulo">
+                            <h1 class="habilidad__titulo">JavaScript</h1>
                         </div>
-
-                        <div class="habilidad">
-                            <div class="habilidad-titulo">
-                                <h1 class="habilidad__titulo">SQL</h1>
-                            </div>
-                            <div class="habilidad-imagen">
-                                <img class="habilidad__imagen" src="images/lenguajes/sql.png" alt="">
-                            </div>
+                        <div class="habilidad-imagen">
+                            <img class="habilidad__imagen" src="images/lenguajes/javascript.png" alt="">
                         </div>
+                    </div>
 
-                        <div class="habilidad">
-                            <div class="habilidad-titulo">
-                                <h1 class="habilidad__titulo">React</h1>
-                            </div>
-                            <div class="habilidad-imagen">
-                                <img class="habilidad__imagen" src="images/lenguajes/react.png" alt="">
-                            </div>
+                    <div class="habilidad">
+                        <div class="habilidad-titulo">
+                            <h1 class="habilidad__titulo">SQL</h1>
                         </div>
-
-                        <div class="habilidad">
-                            <div class="habilidad-titulo">
-                                <h1 class="habilidad__titulo">Flask</h1>
-                            </div>
-                            <div class="habilidad-imagen">
-                                <img class="habilidad__imagen" src="images/lenguajes/flask.png" alt="">
-                            </div>
+                        <div class="habilidad-imagen">
+                            <img class="habilidad__imagen" src="images/lenguajes/sql.png" alt="">
                         </div>
+                    </div>
 
-                        <div class="habilidad">
-                            <div class="habilidad-titulo">
-                                <h1 class="habilidad__titulo">Bootstrap</h1>
-                            </div>
-                            <div class="habilidad-imagen">
-                                <img class="habilidad__imagen" src="images/lenguajes/bootstrap.png" alt="">
-                            </div>
+                    <div class="habilidad">
+                        <div class="habilidad-titulo">
+                            <h1 class="habilidad__titulo">Flask</h1>
                         </div>
-
-                        <div class="habilidad">
-                            <div class="habilidad-titulo">
-                                <h1 class="habilidad__titulo">HTML5</h1>
-                            </div>
-                            <div class="habilidad-imagen">
-                                <img class="habilidad__imagen" src="images/lenguajes/html5.png" alt="">
-                            </div>
+                        <div class="habilidad-imagen">
+                            <img class="habilidad__imagen" src="images/lenguajes/flask.png" alt="">
                         </div>
+                    </div>
 
-                        <div class="habilidad">
-                            <div class="habilidad-titulo">
-                                <h1 class="habilidad__titulo">CSS</h1>
-                            </div>
-                            <div class="habilidad-imagen">
-                                <img class="habilidad__imagen" src="images/lenguajes/css.png" alt="">
-                            </div>
+                    <div class="habilidad">
+                        <div class="habilidad-titulo">
+                            <h1 class="habilidad__titulo">Bootstrap</h1>
                         </div>
+                        <div class="habilidad-imagen">
+                            <img class="habilidad__imagen" src="images/lenguajes/bootstrap.png" alt="">
+                        </div>
+                    </div>
 
-                        <div class="habilidad">
-                            <div class="habilidad-titulo">
-                                <h1 class="habilidad__titulo">Git</h1>
-                            </div>
-                            <div class="habilidad-imagen">
-                                <img class="habilidad__imagen" src="images/lenguajes/git.png" alt="">
-                            </div>
+                    <div class="habilidad">
+                        <div class="habilidad-titulo">
+                            <h1 class="habilidad__titulo">HTML5</h1>
+                        </div>
+                        <div class="habilidad-imagen">
+                            <img class="habilidad__imagen" src="images/lenguajes/html5.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="habilidad">
+                        <div class="habilidad-titulo">
+                            <h1 class="habilidad__titulo">CSS</h1>
+                        </div>
+                        <div class="habilidad-imagen">
+                            <img class="habilidad__imagen" src="images/lenguajes/css.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="habilidad">
+                        <div class="habilidad-titulo">
+                            <h1 class="habilidad__titulo">Git</h1>
+                        </div>
+                        <div class="habilidad-imagen">
+                            <img class="habilidad__imagen" src="images/lenguajes/git.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="habilidad">
+                        <div class="habilidad-titulo">
+                            <h1 class="habilidad__titulo">Axios</h1>
+                        </div>
+                        <div class="habilidad-imagen">
+                            <img class="habilidad__imagen" src="images/lenguajes/axios.png" alt="">
                         </div>
                     </div>
                 </div>
-                
-                <div class="contenido-proyectos">
-                  <div class="proyectos-grilla">
-                                    <div class="tarjetas"> 
-  
-                     <div class="tarjeta"> 
-                         <div class="tarjeta-icono"> 
-                             <i class="fa-regular fa-folder-open"></i>
-                         </div> 
-                         <div class="tarjeta-lenguaje"> 
-                             <p class="tarjeta__lenguaje">Python</p> 
-                         </div> 
-                         <div class="tarjeta-titulo"> 
-                             <h3 class="tarjeta__titulo"> <span class="color-verde">Sistemas basados en reglas</span> 
-                             </h3> 
-                         </div> 
-                         <div class="tarjeta-descripcion"> 
-                             <p class="tarjeta__descripcion">Sobre enfermedades gastrointestinales que arroja un 
-                                 diagnóstico despues de unas preguntas.</p> 
-                         </div> 
-  
-                         <div class="tarjeta-comentarios"> 
-                             <div class="tarjeta-comentarios-grilla"> 
-                                 <div class="tarjeta-comentarios-bloque"> 
-                                    
-                                     <img src="images/lenguajes/python.png" class="tarjeta__comentario" alt="">
-                                 </div> 
-                             </div> 
-                         </div> 
-  
-                         <div class="tarjeta-boton"> 
-                             <a target="_blank" href="https://github.com/zacksPerez43/sistema_de-reglas-python">Ver 
-                                 repositorio en github<i class="fa-solid fa-arrow-up-right-from-square"></i></a> 
-  
-                         </div> 
-                     </div> 
-  
-                     <div class="tarjeta"> 
-                         <div class="tarjeta-icono"> 
-                             <i class="fa-regular fa-folder-open"></i>
-                         </div> 
-                         <div class="tarjeta-lenguaje"> 
-                             <p class="tarjeta__lenguaje">Python + FLASK</p> 
-                         </div> 
-                         <div class="tarjeta-titulo"> 
-                             <h3 class="tarjeta__titulo"> <span class="color-verde">CRUD - API con FLASK</span></h3> 
-                         </div> 
-                         <div class="tarjeta-descripcion"> 
-                             <p class="tarjeta__descripcion">API creada con FLASK con un CRUD de información de vehiculos 
-                                 de renault almacenada en supabase.</p> 
-                         </div> 
-  
-                         <div class="tarjeta-comentarios"> 
-                             <div class="tarjeta-comentarios-grilla"> 
-                                 <div class="tarjeta-comentarios-bloque"> 
-                            <img src="images/lenguajes/python.png" class="tarjeta__comentario" alt="">
-                                 </div> 
-                                 <div class="tarjeta-comentarios-bloque"> 
-                                     <img src="images/lenguajes/sql.png" class="tarjeta__comentario" alt="">
-                                 </div> 
-                             </div> 
-                         </div> 
-  
-                         <div class="tarjeta-boton"> 
-                             <a target="_blank" href="https://github.com/zacksPerez43/info_renault-FLASK-API">Ver 
-                                 repositorio en github <i class="fa-solid fa-arrow-up-right-from-square"></i></a> 
-                         </div> 
-                     </div>
-                  
-                                      <div class="tarjeta"> 
-                         <div class="tarjeta-icono"> 
-                             <i class="fa-regular fa-folder-open"></i>
-  
-                         </div> 
-                         <div class="tarjeta-lenguaje"> 
-                             <p class="tarjeta__lenguaje">Python + SQL</p> 
-                         </div> 
-                         <div class="tarjeta-titulo"> 
-                             <h3 class="tarjeta__titulo"> <span class="color-verde"> MVC - CRUD</span></h3> 
-                         </div> 
-                         <div class="tarjeta-descripcion"> 
-                             <p class="tarjeta__descripcion">CRUD con patrón MVC sobre información de energías en 
-                                 Colombia</p> 
-                         </div> 
-  
-                         <div class="tarjeta-comentarios"> 
-                             <div class="tarjeta-comentarios-grilla"> 
-                                 <div class="tarjeta-comentarios-bloque"> 
-                         <img src="images/lenguajes/python.png" class="tarjeta__comentario" alt="">
-                                      <img src="images/lenguajes/sql.png" class="tarjeta__comentario" alt="">
-                                 </div> 
-                             </div> 
-                         </div> 
-  
-                         <div class="tarjeta-boton"> 
-                             <a target="_blank" href="https://github.com/zacksPerez43/python-MVC_2">Ver repositorio en 
-                                 github <i class="fa-solid fa-arrow-up-right-from-square"></i></a> 
-                         </div> 
-                     </div> 
-  
-                     <div class="tarjeta"> 
-                         <div class="tarjeta-icono"> 
-                                     <i class="fa-regular fa-folder-open"></i>
-                         </div> 
-                         <div class="tarjeta-lenguaje"> 
-                             <p class="tarjeta__lenguaje">HTML + CSS + JS</p> 
-                         </div> 
-                         <div class="tarjeta-titulo"> 
-                             <h3 class="tarjeta__titulo"> <span class="color-verde"> Sistemas basados en reglas</span> 
-                             </h3> 
-                         </div> 
-                         <div class="tarjeta-descripcion"> 
-                             <p class="tarjeta__descripcion">Página para realizar el test del sistema basados en reglas 
-                                 (sobre las enfermedades gastrointestinales) y ver los resultados.</p> 
-                         </div> 
-  
-                         <div class="tarjeta-comentarios"> 
-                             <div class="tarjeta-comentarios-grilla"> 
-                                 <div class="tarjeta-comentarios-bloque"> 
-                                     <p class="tarjeta__comentario">FETCH</p> 
-                                 </div> 
-                                 <div class="tarjeta-comentarios-bloque"> 
-                                     <p class="tarjeta__comentario">SQL</p> 
-                                 </div> 
-                                 <div class="tarjeta-comentarios-bloque"> 
-                                     <p class="tarjeta__comentario">BOOTSTRAP</p> 
-                                 </div> 
-                                 <div class="tarjeta-comentarios-bloque"> 
-                                     <p class="tarjeta__comentario">API</p> 
-                                 </div> 
-                             </div> 
-                         </div> 
-  
-                         <div class="tarjeta-boton"> 
-                             <a target="_blank" href="https://github.com/zacksPerez43/sbr-ia">Ver repositorio en github 
-                                 <i class="fa-solid fa-arrow-up-right-from-square"></i></a> 
-                             <a target="_blank" href="https://zacksperez43.github.io/sbr-ia/">Ver página 
-                                 <i class="fa-solid fa-arrow-up-right-from-square"></i></a> 
-  
-                         </div> 
-                     </div> 
-  
-                     <div class="tarjeta"> 
-                         <div class="tarjeta-icono"> 
-                             <img src="images/lenguajes/html5.png" alt=""> 
-                             <img src="images/lenguajes/css.png" alt=""> 
-                         </div> 
-                         <div class="tarjeta-lenguaje"> 
-                             <p class="tarjeta__lenguaje">HTML + CSS</p> 
-                         </div> 
-                         <div class="tarjeta-titulo"> 
-                             <h3 class="tarjeta__titulo"> <span class="color-verde"> Réplica de soporte de League of 
-                                     Legends</span></h3> 
-                         </div> 
-                         <div class="tarjeta-descripcion"> 
-                             <p class="tarjeta__descripcion">Página que replica el diseño de la página de soporte de 
-                                 League of Legends.</p> 
-                         </div> 
-  
-                         <div class="tarjeta-boton"> 
-                             <a target="_blank" href="https://github.com/zacksPerez43/Replica-lol_support_page">Ver 
-                                 repositorio en github <i class="fa-solid fa-arrow-up-right-from-square"></i></a> 
-                             <a target="_blank" href="https://zacksperez43.github.io/Replica-lol_support_page/">Visitar 
-                                 página <i class="fa-solid fa-arrow-up-right-from-square"></i></a> 
-  
-                         </div> 
-                     </div> 
-  
-                     <div class="tarjeta"> 
-                         <div class="tarjeta-icono"> 
-                             <img src="images/lenguajes/html5.png" alt=""> 
-                             <img src="images/lenguajes/css.png" alt=""> 
-                             <img src="images/lenguajes/javascript.png" alt=""> 
-                         </div> 
-                         <div class="tarjeta-lenguaje"> 
-                             <p class="tarjeta__lenguaje">HTML + CSS + JS</p> 
-                         </div> 
-                         <div class="tarjeta-titulo"> 
-                             <h3 class="tarjeta__titulo"> <span class="color-verde"> Información vehiculos renault</span> 
-                             </h3> 
-                         </div> 
-                         <div class="tarjeta-descripcion"> 
-                             <p class="tarjeta__descripcion">Contiene un CRUD e información en gráficas que están 
-                                 almacenadas en supabase.</p> 
-                         </div> 
-  
-                         <div class="tarjeta-comentarios"> 
-                             <div class="tarjeta-comentarios-grilla"> 
-                                 <div class="tarjeta-comentarios-bloque"> 
-                                     <p class="tarjeta__comentario">AXIOS</p> 
-                                 </div> 
-                                 <div class="tarjeta-comentarios-bloque"> 
-                                     <p class="tarjeta__comentario">CHART.JS</p> 
-                                 </div> 
-                                 <div class="tarjeta-comentarios-bloque"> 
-                                     <p class="tarjeta__comentario">SQL</p> 
-                                 </div> 
-                                 <div class="tarjeta-comentarios-bloque"> 
-                                     <p class="tarjeta__comentario">WEB SCRAPPING</p> 
-                                 </div> 
-                                 <div class="tarjeta-comentarios-bloque"> 
-                                     <p class="tarjeta__comentario">API</p> 
-                                 </div> 
-                             </div> 
-                         </div> 
-  
-                         <div class="tarjeta-boton"> 
-                             <a target="_blank" href="https://github.com/zacksPerez43/informacion_vehiculos_renault">Ver 
-                                 repositorio en github <i class="fa-solid fa-arrow-up-right-from-square"></i></a> 
-                             <a target="_blank" 
-                                 href="https://zacksperez43.github.io/informacion_vehiculos_renault/">Visitar 
-                                 página <i class="fa-solid fa-arrow-up-right-from-square"></i></a> 
-                         </div> 
-                     </div>
-                  </div>
+            </div>
+
+            <div class="contenido-proyectos">
+                <div class="proyectos-grilla">
+                    <div class="tarjetas">
+
+                        <div class="tarjeta headline">
+                            <div class="tarjeta-icono">
+                                <i class="fa-regular fa-folder-open"></i>
+                            </div>
+
+                            <div class="tarjeta-lenguaje">
+                                <img src="images/lenguajes/python.png" class="tarjeta__lenguaje" alt="">
+
+                            </div>
+
+                            <div class="tarjeta-titulo">
+                                <h3 class="tarjeta__titulo"> <span class="color-verde">Sistemas basados en
+                                        reglas</span>
+                                </h3>
+                            </div>
+
+                            <div class="tarjeta-descripcion">
+                                <p class="tarjeta__descripcion">Sobre enfermedades gastrointestinales que arroja un
+                                    diagnóstico despues de unas preguntas.</p>
+                            </div>
+
+                            <div class="tarjeta-enlace">
+                                <a target="_blank" href="https://github.com/zacksPerez43/sistema_de-reglas-python">Ver
+                                    repositorio en github<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                            </div>
+                        </div>
+
+                        <div class="tarjeta headline">
+                            <div class="tarjeta-icono">
+                                <i class="fa-regular fa-folder-open"></i>
+                            </div>
+
+                            <div class="tarjeta-lenguaje">
+                                <img src="images/lenguajes/python.png" class="tarjeta__lenguaje" alt="">
+                                <img src="images/lenguajes/sql.png" class="tarjeta__lenguaje" alt="">
+                            </div>
+
+                            <div class="tarjeta-titulo">
+                                <h3 class="tarjeta__titulo"> <span class="color-verde">CRUD - API con FLASK</span>
+                                </h3>
+                            </div>
+
+                            <div class="tarjeta-descripcion">
+                                <p class="tarjeta__descripcion">API creada con FLASK con un CRUD de información de
+                                    vehiculos
+                                    de renault almacenada en supabase.</p>
+                            </div>
+
+                            <div class="tarjeta-enlace">
+                                <a target="_blank" href="https://github.com/zacksPerez43/info_renault-FLASK-API">Ver
+                                    repositorio en github <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="tarjeta headline">
+                            <div class="tarjeta-icono">
+                                <i class="fa-regular fa-folder-open"></i>
+                            </div>
+                            <div class="tarjeta-lenguaje">
+                                <img src="images/lenguajes/python.png" class="tarjeta__lenguaje" alt="">
+                                <img src="images/lenguajes/sql.png" class="tarjeta__lenguaje" alt="">
+                            </div>
+                            <div class="tarjeta-titulo">
+                                <h3 class="tarjeta__titulo"> <span class="color-verde"> MVC - CRUD</span></h3>
+                            </div>
+                            <div class="tarjeta-descripcion">
+                                <p class="tarjeta__descripcion">CRUD con patrón MVC sobre información de energías en
+                                    Colombia</p>
+                            </div>
+
+                            <div class="tarjeta-enlace">
+                                <a target="_blank" href="https://github.com/zacksPerez43/python-MVC_2">Ver
+                                    repositorio en
+                                    github <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="tarjeta headline">
+                            <div class="tarjeta-icono">
+                                <i class="fa-regular fa-folder-open"></i>
+                            </div>
+                            <div class="tarjeta-lenguaje">
+                                <img src="images/lenguajes/html5.png" class="tarjeta__lenguaje" alt="">
+                                <img src="images/lenguajes/bootstrap.png" class="tarjeta__lenguaje" alt="">
+                                <img src="images/lenguajes/javascript.png" class="tarjeta__lenguaje" alt="">
+                                <img src="images/lenguajes/sql.png" class="tarjeta__lenguaje" alt="">
+
+                            </div>
+                            <div class="tarjeta-titulo">
+                                <h3 class="tarjeta__titulo"> <span class="color-verde"> Sistemas basados en
+                                        reglas</span>
+                                </h3>
+                            </div>
+                            <div class="tarjeta-descripcion">
+                                <p class="tarjeta__descripcion">Página para realizar el test del sistema basados en
+                                    reglas
+                                    (sobre las enfermedades gastrointestinales) y ver los resultados.</p>
+                            </div>
+
+                            <div class="tarjeta-enlace">
+                                <a target="_blank" href="https://github.com/zacksPerez43/sbr-ia">Ver repositorio en
+                                    github
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a target="_blank" href="https://zacksperez43.github.io/sbr-ia/">Ver página
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                            </div>
+                        </div>
+
+                        <div class="tarjeta headline">
+                            <div class="tarjeta-icono">
+                                <i class="fa-regular fa-folder-open"></i>
+                            </div>
+                            <div class="tarjeta-lenguaje">
+                                <img src="images/lenguajes/html5.png" class="tarjeta__lenguaje" alt="">
+                                <img src="images/lenguajes/css.png" class="tarjeta__lenguaje" alt="">
+
+                            </div>
+                            <div class="tarjeta-titulo">
+                                <h3 class="tarjeta__titulo"> <span class="color-verde"> Réplica de soporte de League
+                                        of
+                                        Legends</span></h3>
+                            </div>
+                            <div class="tarjeta-descripcion">
+                                <p class="tarjeta__descripcion">Página que replica el diseño de la página de soporte
+                                    de
+                                    League of Legends.</p>
+                            </div>
+
+                            <div class="tarjeta-enlace">
+                                <a target="_blank" href="https://github.com/zacksPerez43/Replica-lol_support_page">Ver
+                                    repositorio en github <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a target="_blank"
+                                    href="https://zacksperez43.github.io/Replica-lol_support_page/">Visitar
+                                    página <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                            </div>
+                        </div>
+
+                        <div class="tarjeta headline">
+                            <div class="tarjeta-icono">
+                                <i class="fa-regular fa-folder-open"></i>
+                            </div>
+                            <div class="tarjeta-lenguaje">
+                                <img src="images/lenguajes/html5.png" class="tarjeta__lenguaje" alt="">
+                                <img src="images/lenguajes/css.png" class="tarjeta__lenguaje" alt="">
+                                <img src="images/lenguajes/javascript.png" class="tarjeta__lenguaje" alt="">
+                                <img src="images/lenguajes/sql.png" class="tarjeta__lenguaje" alt="">
+                            </div>
+                            <div class="tarjeta-titulo">
+                                <h3 class="tarjeta__titulo"> <span class="color-verde"> Información vehiculos
+                                        renault</span>
+                                </h3>
+                            </div>
+                            <div class="tarjeta-descripcion">
+                                <p class="tarjeta__descripcion">Contiene un CRUD e información en gráficas que están
+                                    almacenadas en supabase.</p>
+                            </div>
+
+                            <div class="tarjeta-enlace">
+                                <a target="_blank"
+                                    href="https://github.com/zacksPerez43/informacion_vehiculos_renault">Ver
+                                    repositorio en github <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a target="_blank"
+                                    href="https://zacksperez43.github.io/informacion_vehiculos_renault/">Visitar
+                                    página <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
-        </section>
-
-        <footer>
-
-        </footer>
-    </div>
 
 
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="contenido-redes">
+            <div class="redes-tarjetas">
+
+                <div class="tarjeta">
+                    <div class="tarjeta-icono">
+                        <a target="_blank" href="https://github.com/zacksPerez43"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="tarjeta">
+                    <div class="tarjeta-icono">
+                        <a target="_blank" href="https://www.instagram.com/kotscarlos/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="tarjeta">
+                    <div class="tarjeta-icono">
+                        <a target="_blank" href="https://api.whatsapp.com/send?phone=573113109661"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="tarjeta">
+                    <div class="tarjeta-icono">
+                       <a target="_blank" href=""><i class="fa-regular fa-envelope"></i></a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/index.js"></script>
     <script src="https://kit.fontawesome.com/1a5bcd4a97.js" crossorigin="anonymous"></script>
 
 </body>

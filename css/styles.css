@@ -13,124 +13,260 @@ body {
     color: rgb(218, 218, 219);
 }
 
-.contenedor{
+.menu {
     display: grid;
-    margin-right: 12vw;
-    margin-left: 12vw;
+    background-color: #191919;
+    height: 10vh;
 }
 
-.menu-contenedor{
-    margin-top: 3vh;
+.menu-contenedor {
     display: grid;
-    grid-template-areas: 
-    "titulo enlaces";
+    grid-template-areas:
+        "titulo enlaces";
     align-items: center;
     justify-content: space-between;
+    margin-left: 12vw;
+    margin-right: 12vw;
 }
 
-.menu-titulo{
+.menu-titulo {
     grid-area: titulo;
 }
 
-.menu-lista{
-    grid-area: enlaces;
-}
-
-.menu-contenedor .menu-lista{
-    display: flex;
-}
-
-.menu-contenedor .menu-titulo .menu__titulo{
+.menu-contenedor .menu-titulo .menu__titulo {
     font-size: 1.8vw;
     font-weight: bold;
 }
 
-.menu-contenedor .menu-lista .menu__item{
-    font-size: 1.2vw;
-    margin-left: 2vw;
+.menu-lista {
+    grid-area: enlaces;
 }
 
-.menu-contenedor .menu-lista .menu__item a{
+.menu-contenedor .menu-lista {
+    display: flex;
+}
+
+.menu-contenedor .menu-lista .menu__item a {
+    font-size: 1.2vw;
+    margin-left: 2vw;
     color: rgb(218, 218, 219);
 }
 
+.pagina-principal {
+    display: grid;
+    margin-right: 12vw;
+    margin-left: 12vw;
+    margin-bottom: 10vh;
+}
+
+
 /* Contenido información */
 
-.principal-grilla{
+.principal-grilla {
     margin-top: 15vh;
+    display: grid;
+    grid-template-areas:
+        "informacion"
+        "habilidades"
+        "proyectos";
+    row-gap: 10vh;
     margin-right: 10vw;
     margin-left: 10vw;
-    display: grid;
-    grid-template-areas: 
-    "informacion"
-    "redes"
-    "habilidades";
-    row-gap: 10vh;
 }
 
-.contenido-redes{
-    grid-area: redes;
-}
+/* CONTENIDO INFORMACIÓN */
 
-.contenido-habilidades{
-    grid-area: habilidades;
-}
-
-.contenido-informacion{
+.contenido-informacion {
     grid-area: informacion;
     display: grid;
-    grid-template-areas: 
-    "imagen nombre"
-    "imagen descripcion";
+    grid-template-areas:
+        "imagen nombre"
+        "imagen descripcion";
     column-gap: 3vw;
 }
 
-.contenido-nombre{
+.contenido-nombre {
     grid-area: nombre;
 }
 
-.contenido-descripcion{
+.contenido-descripcion {
     grid-area: descripcion;
 }
 
-.contenido-imagen{
+.contenido-imagen {
     grid-area: imagen;
 }
 
-.contenido__descripcion{
+.contenido__descripcion {
     font-size: 1.2vw;
     color: rgb(155, 156, 157);
     letter-spacing: 1px;
 }
 
-.contenido-redes{
+/* CONTENIDO HABILIDADES */
+
+.contenido-habilidades {
+    grid-area: habilidades;
+    width: auto;
+    overflow-y: auto;
+
+}
+
+.contenido-habilidades::-webkit-scrollbar {
+    height: 1.5vh;
+    /* Tamaño del scroll en horizontal */
+}
+
+
+.contenido-habilidades::-webkit-scrollbar-track {
+    background: rgb(29, 30, 32);
+    /* color of the tracking area */
+}
+
+.contenido-habilidades::-webkit-scrollbar-thumb {
+    background-color: #191919;
+    /* color of the scroll thumb */
+    border-radius: 2vw;
+    /* roundness of the scroll thumb */
+}
+
+.habilidades-grilla {
+    display: flex;
+    column-gap: 2vw;
+}
+
+.habilidad {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.habilidad .habilidad__titulo {
+    font-size: 1.5vw;
+}
+
+/* CONTENIDO PROYECTOS */
+
+.contenido-proyectos {
+    grid-area: proyectos;
+}
+
+.proyectos-grilla {
     display: grid;
-    align-items: end;
+    grid-template-areas:
+        "titulo"
+        "tarjetas";
+    row-gap: 2vh;
+}
+
+.proyectos-grilla .tarjetas {
+    grid-area: tarjetas;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 0.5vw;
+    row-gap: 0.5vw;
+}
+
+.proyectos-grilla .tarjeta {
+    display: grid;
+    grid-template-areas:
+        "icono lenguaje"
+        "titulo titulo"
+        "descripcion descripcion"
+        "boton boton";
+    height: 30vh;
+    border-radius: 2%;
+    background-color: #191919;
+    color: azure;
+    width: 25vw;
+    padding: 1vw;
+}
+
+.proyectos-grilla .tarjeta .tarjeta-icono {
+    grid-area: icono;
+    text-align: start;
+    font-size: 2.5vw;
+    color: #FFC857;
+}
+
+.proyectos-grilla .tarjeta .tarjeta-icono img {
+    height: 5vh;
+    width: auto;
+}
+
+.proyectos-grilla .tarjeta .tarjeta-lenguaje {
+    grid-area: lenguaje;
+    margin-top: 1.5vh;
+    text-align: end;
+}
+
+.proyectos-grilla .tarjeta .tarjeta__lenguaje {
+    height: 5vh;
+    width: auto;
+}
+
+.proyectos-grilla .tarjeta .tarjeta-titulo {
+    grid-area: titulo;
+    text-align: start;
+}
+
+.proyectos-grilla .tarjeta .tarjeta__titulo {
+    text-transform: uppercase;
+    font-size: 1.2vw;
+}
+
+.proyectos-grilla .tarjeta .tarjeta-descripcion {
+    grid-area: descripcion;
+    text-align: start;
+}
+
+.proyectos-grilla .tarjeta .tarjeta__descripcion {
+    font-size: 0.95vw;
+    line-height: 1.5;
+}
+
+.proyectos-grilla .tarjeta .tarjeta-enlace {
+    text-align: start;
+    grid-area: boton;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.proyectos-grilla .tarjeta .tarjeta-enlace a {
+    font-size: 0.95vw;
+    color: #59bd85;
+}
+
+/* CONTENIDO REDES */
+
+.footer {
+    display: grid;
+    align-items: center;
+    height: 20vh;
+    background-color: #191919;
+}
+
+.contenido-redes {
+    padding: 0 5vw;
 }
 
 .redes-tarjetas {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
+    column-gap: 1vw;
 }
 
 .redes-tarjetas .tarjeta {
     display: grid;
-    grid-template-areas:
-        "imagen textos";
-    column-gap: 1.5vw;
+    column-gap: 5vw;
     align-items: center;
 }
 
-.redes-tarjetas .tarjeta-imagen {
-    display: grid;
-    grid-area: imagen;
-    
-}
-
-.redes-tarjetas .tarjeta-textos {
-    display: grid;
-    grid-area: textos;
+.redes-tarjetas .tarjeta-icono i {
+    font-size: 1.7vw;
 }
 
 .redes-tarjetas .tarjeta-textos h4 {
@@ -141,337 +277,209 @@ body {
 .redes-tarjetas .tarjeta-textos a {
     font-size: 1.2vw;
     color: rgb(155, 156, 157);
-
 }
-
-/* CONTENIDO HABILIDADES */
-
-.habilidades-grilla{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.habilidad .habilidad__titulo{
-    font-size: 1.5vw;
-}
-
-/* CONTENIDO PROYECTOS */
-
-.proyectos-grilla { 
-     display: grid; 
-     grid-template-areas: 
-         "titulo" 
-         "tarjetas"; 
-     row-gap: 2vh; 
- } 
-  
-  
- .proyectos-grilla .tarjetas { 
-     display: flex; 
-     grid-area: tarjetas; 
-     flex-wrap: wrap; 
-     justify-content: center; 
-     column-gap: 3vw; 
-     row-gap: 1vw; 
- } 
-  
- .proyectos-grilla .tarjeta { 
-     display: grid; 
-     grid-template-areas: 
-         "icono lenguaje" 
-         "titulo titulo" 
-         "descripcion descripcion" 
-         "comentarios comentarios" 
-         "boton boton"; 
-     height: 30vh; 
-     border-radius: 2%; 
-     background-color: #191919; 
-     color: azure; 
-      /*  
-     width: 22vw; 
-     padding: 0.6vw; 
-     */ 
-     
-     width: 30vw; 
-     padding: 1vw; 
- } 
-  
- .proyectos-grilla .tarjeta .tarjeta-icono { 
-     grid-area: icono; 
-     text-align: start; 
- } 
-  
- .proyectos-grilla .tarjeta .tarjeta-lenguaje { 
-     grid-area: lenguaje; 
-     margin-top: 1.5vh; 
-     text-align: end; 
- } 
-  
- .proyectos-grilla .tarjeta .tarjeta-titulo { 
-     grid-area: titulo; 
-     text-align: start; 
- } 
-  
- .proyectos-grilla .tarjeta .tarjeta-descripcion { 
-     grid-area: descripcion; 
-     text-align: start; 
- } 
-  
- .proyectos-grilla .tarjeta .tarjeta-comentarios { 
-     grid-area: comentarios; 
-     text-align: start; 
- } 
-  
- .proyectos-grilla .tarjeta .tarjeta-boton { 
-     text-align: start; 
-     grid-area: boton; 
-     display: flex; 
-     justify-content: space-between; 
-     align-items: center; 
- } 
-  
- .proyectos-grilla .tarjeta .tarjeta-icono img { 
-     height: 5vh; 
-     width: auto; 
- } 
-  
- .proyectos-grilla .tarjeta .tarjeta-comentarios .tarjeta-comentarios-grilla{ 
-     display: flex; 
-     column-gap: 0.3vw; 
-     } 
-  
- .proyectos-grilla .tarjeta .tarjeta-comentarios .tarjeta-comentarios-grilla .tarjeta__comentario { 
-     font-size: 0.7vw; 
- } 
-  
- .proyectos-grilla .tarjeta .tarjeta-comentarios .tarjeta-comentarios-grilla .tarjeta-comentarios-bloque { 
-     padding: 0.1vw; 
-     border-radius: 10%; 
- } 
-  
- .proyectos-grilla .tarjeta .tarjeta-lenguaje .tarjeta__lenguaje{ 
-     font-size: 0.9vw; 
- } 
-  
- .proyectos-grilla .tarjeta .tarjeta-titulo .tarjeta__titulo{ 
-     text-transform: uppercase; 
-     font-size: 1.2vw; 
- } 
-  
- .proyectos-grilla .tarjeta .tarjeta-descripcion .tarjeta__descripcion{ 
-     font-size: 0.95vw; 
-     line-height: 1.5; 
- } 
-  
- .proyectos-grilla .tarjeta .tarjeta-boton a { 
-     color: #59bd85; 
- }
 
 @media only screen and (max-width: 600px) {
 
-    .contenedor{
-        margin: 0;
+    .pagina-principal {
+        margin-right: 0vw;
+        margin-left: 0vw;
+        margin-bottom: 5vh;
     }
 
-    .menu-contenedor{
+    .menu {
+        height: 20vh;
+    }
+
+    .menu-contenedor {
         display: grid;
-        grid-template-areas: 
-        "titulo" 
-        "enlaces";
-        justify-content: start;
+        grid-template-areas:
+            "titulo"
+            "enlaces";
         margin-left: 5vw;
-        row-gap: 5vh;
+        row-gap: 0vh;
     }
 
-    .menu-contenedor .menu-titulo .menu__titulo{
+    .menu-contenedor .menu-titulo .menu__titulo {
         font-size: 8vw;
     }
-    
-    .menu-contenedor .menu-lista .menu__item{
+
+    .menu-contenedor .menu-lista .menu__item a {
         font-size: 5vw;
         margin-left: 3vw;
     }
 
-    .principal-grilla{
-      margin-top: 5vh;
-      margin-right: 5vw;
-      margin-left: 5vw;
-      row-gap: 5vh;
+    .principal-grilla {
+        margin-top: 5vh;
+        margin-right: 5vw;
+        margin-left: 5vw;
+        row-gap: 5vh;
     }
 
-    .contenido-informacion{
-        grid-template-areas: 
-        "imagen"
-        "nombre"
-        "descripcion";
+    .contenido-informacion {
+        grid-template-areas:
+            "imagen"
+            "nombre"
+            "descripcion";
     }
 
-    .contenido__nombre{
+    .contenido-imagen {
+        display: none;
+    }
+
+    .contenido__nombre {
         font-size: 8vw;
     }
 
-    .contenido__descripcion{
+    .contenido__descripcion {
         font-size: 5vw;
     }
 
-    .contenido-imagen{
-        display: none;
-    }
-    
-    .contenido-redes{
-        display: grid;
-        align-items: end;
-    }
-    
-    .redes-tarjetas {
-        display: flex;
-        justify-content: start;
-        column-gap: 2vw;
-        align-items: center;
-    }
 
-    .redes-tarjetas .tarjeta-imagen{
-        font-size: 4vw;
-    }
-    
-    .redes-tarjetas .tarjeta-textos {
-        display: none;
-    }
+    /* CONTENIDO HABILIDADES */
 
-    .habilidades-grilla{
+    .habilidades-grilla {
         display: flex;
         align-items: center;
-        column-gap: 20vw;
+        column-gap: 5vw;
         flex-direction: row;
-        justify-content: center;
     }
 
-    .habilidad .habilidad-titulo{
+    .habilidad .habilidad-titulo {
         display: grid;
         justify-content: center;
     }
 
-    .habilidad .habilidad__titulo{
+    .habilidad .habilidad__titulo {
         font-size: 5vw;
     }
 
-    .habilidad .habilidad__imagen{
+    .habilidad .habilidad__imagen {
         height: 15vh;
         width: auto;
     }
-    
-    /* CONTENIDO PROYECTOS */
-    
-    .proyectos-grilla { 
-     display: grid; 
-     grid-template-areas: 
-         "titulo" 
-         "tarjetas"; 
-     row-gap: 2vh; 
- } 
-  
-  
- .proyectos-grilla .tarjetas { 
-     display: flex; 
-     grid-area: tarjetas; 
-     flex-wrap: wrap; 
-     justify-content: center; 
-     column-gap: 3vw; 
-     row-gap: 3vw;
- } 
-  
- .proyectos-grilla .tarjeta { 
-     display: grid; 
-     grid-template-areas: 
-         "icono lenguaje" 
-         "titulo titulo" 
-         "descripcion descripcion" 
-         "comentarios comentarios" 
-         "boton boton"; 
-     height: 35vh; 
-     border-radius: 2%; 
-     background-color: #191919; 
-     color: azure; 
-      /*  
-     width: 22vw; 
-     padding: 0.6vw; 
-     */ 
-     
-     width: 83vw; 
-     padding:3vw;
- } 
-  
- .proyectos-grilla .tarjeta .tarjeta-icono { 
-     grid-area: icono; 
-     text-align: start; 
-     font-size: 8vw;
-     color: #FFC857;
- } 
-  
- .proyectos-grilla .tarjeta .tarjeta-lenguaje { 
-     grid-area: lenguaje; 
-     margin-top: 1.5vh; 
-     text-align: end; 
- } 
-  
- .proyectos-grilla .tarjeta .tarjeta-titulo { 
-     grid-area: titulo; 
-     text-align: start; 
- } 
-  
- .proyectos-grilla .tarjeta .tarjeta-descripcion { 
-     grid-area: descripcion; 
-     text-align: start; 
- } 
-  
- .proyectos-grilla .tarjeta .tarjeta-comentarios { 
-     grid-area: comentarios; 
-     text-align: start; 
- } 
-  
- .proyectos-grilla .tarjeta .tarjeta-boton { 
-     text-align: start; 
-     grid-area: boton; 
-     display: flex; 
-     justify-content: space-between; 
-     align-items: center; 
- } 
-  
- .proyectos-grilla .tarjeta .tarjeta-icono img { 
-     height: 7vh; 
-     width: auto; 
- } 
-  
- .proyectos-grilla .tarjeta .tarjeta-comentarios .tarjeta-comentarios-grilla{ 
-     display: flex; 
-     column-gap: 0.3vw; 
-     } 
-  
- .proyectos-grilla .tarjeta .tarjeta-comentarios .tarjeta-comentarios-grilla .tarjeta__comentario {   height: 3vh;
-     width: auto;
- } 
-  
- .proyectos-grilla .tarjeta .tarjeta-comentarios .tarjeta-comentarios-grilla .tarjeta-comentarios-bloque { 
-     padding: 0.1vw; 
-     border-radius: 10%; 
- } 
-  
- .proyectos-grilla .tarjeta .tarjeta-lenguaje .tarjeta__lenguaje{ 
-     font-size: 4vw; 
- } 
-  
- .proyectos-grilla .tarjeta .tarjeta-titulo .tarjeta__titulo{ 
-     text-transform: uppercase; 
-     font-size: 4vw; 
- } 
-  
- .proyectos-grilla .tarjeta .tarjeta-descripcion .tarjeta__descripcion{ 
-     font-size: 4vw; 
-     line-height: 1.5; 
- } 
-  
- .proyectos-grilla .tarjeta .tarjeta-boton a { 
-     color: #59bd85; 
- }
 
+    /* CONTENIDO PROYECTOS */
+
+    .proyectos-grilla {
+        display: grid;
+        grid-template-areas:
+            "titulo"
+            "tarjetas";
+        row-gap: 2vh;
+    }
+
+    .proyectos-grilla .tarjetas {
+        display: flex;
+        grid-area: tarjetas;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 3vw;
+        row-gap: 3vw;
+    }
+
+    .proyectos-grilla .tarjeta {
+        display: grid;
+        grid-template-areas:
+            "icono lenguaje"
+            "titulo titulo"
+            "descripcion descripcion"
+            "boton boton";
+        height: 35vh;
+        border-radius: 2%;
+        background-color: #191919;
+        color: azure;
+        width: 83vw;
+        padding: 3vw;
+    }
+
+    .proyectos-grilla .tarjeta .tarjeta-icono {
+        grid-area: icono;
+        text-align: start;
+        font-size: 8vw;
+        color: #FFC857;
+    }
+
+    .proyectos-grilla .tarjeta .tarjeta-icono img {
+        height: 7vh;
+        width: auto;
+    }
+
+    .proyectos-grilla .tarjeta .tarjeta-lenguaje {
+        grid-area: lenguaje;
+        margin-top: 1.5vh;
+        text-align: end;
+    }
+
+    .proyectos-grilla .tarjeta .tarjeta__lenguaje {
+        font-size: 4vw;
+    }
+
+    .proyectos-grilla .tarjeta .tarjeta-titulo {
+        grid-area: titulo;
+        text-align: start;
+    }
+
+    .proyectos-grilla .tarjeta .tarjeta__titulo {
+        text-transform: uppercase;
+        font-size: 5vw;
+    }
+
+    .proyectos-grilla .tarjeta .tarjeta-descripcion {
+        grid-area: descripcion;
+        text-align: start;
+    }
+
+    .proyectos-grilla .tarjeta .tarjeta__descripcion {
+        font-size: 3.5vw;
+        line-height: 1.5;
+    }
+
+    .proyectos-grilla .tarjeta .tarjeta-enlace {
+        text-align: start;
+        grid-area: boton;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .proyectos-grilla .tarjeta .tarjeta-enlace a {
+        color: #59bd85;
+        font-size: 3.5vw;
+    }
+
+    .redes-tarjetas .tarjeta {
+        display: grid;
+        column-gap: 5vw;
+        align-items: center;
+    }
+
+    /* CONTENIDO REDES */
+
+    .footer {
+        display: grid;
+        align-items: center;
+        height: 20vh;
+        background-color: #191919;
+    }
+
+    .contenido-redes {
+        padding: 0;
+    }
+
+    .redes-tarjetas {
+        display: flex;
+        justify-content: center;
+        column-gap: 5vw;
+    }
+
+    .redes-tarjetas .tarjeta {
+        display: grid;
+        align-items: center;
+    }
+
+    .redes-tarjetas .tarjeta-icono i {
+        font-size: 8vw;
+        color: aliceblue;
+    }
 }
