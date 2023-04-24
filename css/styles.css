@@ -155,6 +155,118 @@ body {
     font-size: 1.5vw;
 }
 
+/* CONTENIDO PROYECTOS */
+
+.proyectos-grilla { 
+     display: grid; 
+     grid-template-areas: 
+         "titulo" 
+         "tarjetas"; 
+     row-gap: 2vh; 
+ } 
+  
+  
+ .proyectos-grilla .tarjetas { 
+     display: flex; 
+     grid-area: tarjetas; 
+     flex-wrap: wrap; 
+     justify-content: center; 
+     column-gap: 3vw; 
+     row-gap: 1vw; 
+ } 
+  
+ .proyectos-grilla .tarjeta { 
+     display: grid; 
+     grid-template-areas: 
+         "icono lenguaje" 
+         "titulo titulo" 
+         "descripcion descripcion" 
+         "comentarios comentarios" 
+         "boton boton"; 
+     height: 30vh; 
+     border-radius: 2%; 
+     background-color: #191919; 
+     color: azure; 
+      /*  
+     width: 22vw; 
+     padding: 0.6vw; 
+     */ 
+     
+     width: 30vw; 
+     padding: 1vw; 
+ } 
+  
+ .proyectos-grilla .tarjeta .tarjeta-icono { 
+     grid-area: icono; 
+     text-align: start; 
+ } 
+  
+ .proyectos-grilla .tarjeta .tarjeta-lenguaje { 
+     grid-area: lenguaje; 
+     margin-top: 1.5vh; 
+     text-align: end; 
+ } 
+  
+ .proyectos-grilla .tarjeta .tarjeta-titulo { 
+     grid-area: titulo; 
+     text-align: start; 
+ } 
+  
+ .proyectos-grilla .tarjeta .tarjeta-descripcion { 
+     grid-area: descripcion; 
+     text-align: start; 
+ } 
+  
+ .proyectos-grilla .tarjeta .tarjeta-comentarios { 
+     grid-area: comentarios; 
+     text-align: start; 
+ } 
+  
+ .proyectos-grilla .tarjeta .tarjeta-boton { 
+     text-align: start; 
+     grid-area: boton; 
+     display: flex; 
+     justify-content: space-between; 
+     align-items: center; 
+ } 
+  
+ .proyectos-grilla .tarjeta .tarjeta-icono img { 
+     height: 5vh; 
+     width: auto; 
+ } 
+  
+ .proyectos-grilla .tarjeta .tarjeta-comentarios .tarjeta-comentarios-grilla{ 
+     display: flex; 
+     column-gap: 0.3vw; 
+     } 
+  
+ .proyectos-grilla .tarjeta .tarjeta-comentarios .tarjeta-comentarios-grilla .tarjeta__comentario { 
+     font-size: 0.7vw; 
+ } 
+  
+ .proyectos-grilla .tarjeta .tarjeta-comentarios .tarjeta-comentarios-grilla .tarjeta-comentarios-bloque { 
+     padding: 0.1vw; 
+     border-radius: 10%; 
+ } 
+  
+ .proyectos-grilla .tarjeta .tarjeta-lenguaje .tarjeta__lenguaje{ 
+     font-size: 0.9vw; 
+ } 
+  
+ .proyectos-grilla .tarjeta .tarjeta-titulo .tarjeta__titulo{ 
+     text-transform: uppercase; 
+     font-size: 1.2vw; 
+ } 
+  
+ .proyectos-grilla .tarjeta .tarjeta-descripcion .tarjeta__descripcion{ 
+     font-size: 0.95vw; 
+     line-height: 1.5; 
+ } 
+  
+ .proyectos-grilla .tarjeta .tarjeta-boton a { 
+     color: #59bd85; 
+ }
+
 @media only screen and (max-width: 600px) {
 
     .contenedor{
@@ -181,8 +293,10 @@ body {
     }
 
     .principal-grilla{
-        margin-top: 10vh;
-        row-gap: 5vh;
+      margin-top: 5vh;
+      margin-right: 5vw;
+      margin-left: 5vw;
+      row-gap: 5vh;
     }
 
     .contenido-informacion{
@@ -245,6 +359,119 @@ body {
         height: 15vh;
         width: auto;
     }
-
+    
+    /* CONTENIDO PROYECTOS */
+    
+    .proyectos-grilla { 
+     display: grid; 
+     grid-template-areas: 
+         "titulo" 
+         "tarjetas"; 
+     row-gap: 2vh; 
+ } 
+  
+  
+ .proyectos-grilla .tarjetas { 
+     display: flex; 
+     grid-area: tarjetas; 
+     flex-wrap: wrap; 
+     justify-content: center; 
+     column-gap: 3vw; 
+     row-gap: 3vw;
+ } 
+  
+ .proyectos-grilla .tarjeta { 
+     display: grid; 
+     grid-template-areas: 
+         "icono lenguaje" 
+         "titulo titulo" 
+         "descripcion descripcion" 
+         "comentarios comentarios" 
+         "boton boton"; 
+     height: 35vh; 
+     border-radius: 2%; 
+     background-color: #191919; 
+     color: azure; 
+      /*  
+     width: 22vw; 
+     padding: 0.6vw; 
+     */ 
+     
+     width: 83vw; 
+     padding:3vw;
+ } 
+  
+ .proyectos-grilla .tarjeta .tarjeta-icono { 
+     grid-area: icono; 
+     text-align: start; 
+     font-size: 8vw;
+     color: #FFC857;
+ } 
+  
+ .proyectos-grilla .tarjeta .tarjeta-lenguaje { 
+     grid-area: lenguaje; 
+     margin-top: 1.5vh; 
+     text-align: end; 
+ } 
+  
+ .proyectos-grilla .tarjeta .tarjeta-titulo { 
+     grid-area: titulo; 
+     text-align: start; 
+ } 
+  
+ .proyectos-grilla .tarjeta .tarjeta-descripcion { 
+     grid-area: descripcion; 
+     text-align: start; 
+ } 
+  
+ .proyectos-grilla .tarjeta .tarjeta-comentarios { 
+     grid-area: comentarios; 
+     text-align: start; 
+ } 
+  
+ .proyectos-grilla .tarjeta .tarjeta-boton { 
+     text-align: start; 
+     grid-area: boton; 
+     display: flex; 
+     justify-content: space-between; 
+     align-items: center; 
+ } 
+  
+ .proyectos-grilla .tarjeta .tarjeta-icono img { 
+     height: 7vh; 
+     width: auto; 
+ } 
+  
+ .proyectos-grilla .tarjeta .tarjeta-comentarios .tarjeta-comentarios-grilla{ 
+     display: flex; 
+     column-gap: 0.3vw; 
+     } 
+  
+ .proyectos-grilla .tarjeta .tarjeta-comentarios .tarjeta-comentarios-grilla .tarjeta__comentario {   height: 3vh;
+     width: auto;
+ } 
+  
+ .proyectos-grilla .tarjeta .tarjeta-comentarios .tarjeta-comentarios-grilla .tarjeta-comentarios-bloque { 
+     padding: 0.1vw; 
+     border-radius: 10%; 
+ } 
+  
+ .proyectos-grilla .tarjeta .tarjeta-lenguaje .tarjeta__lenguaje{ 
+     font-size: 4vw; 
+ } 
+  
+ .proyectos-grilla .tarjeta .tarjeta-titulo .tarjeta__titulo{ 
+     text-transform: uppercase; 
+     font-size: 4vw; 
+ } 
+  
+ .proyectos-grilla .tarjeta .tarjeta-descripcion .tarjeta__descripcion{ 
+     font-size: 4vw; 
+     line-height: 1.5; 
+ } 
+  
+ .proyectos-grilla .tarjeta .tarjeta-boton a { 
+     color: #59bd85; 
+ }
 
 }
