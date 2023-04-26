@@ -9,14 +9,23 @@
     text-decoration: none;
 }
 
+:root{
+    --negroClaro: rgb(29, 30, 32);
+    --negroOscuro: #191919;
+    --blanco: rgb(218, 218, 219);
+    --grisClaro: rgb(155, 156, 157);
+    --amarillo: #FFC857;
+    --verde:#59bd85;
+}
+
 body {
-    background-color: rgb(29, 30, 32);
-    color: rgb(218, 218, 219);
+    background-color: var(--negroClaro);
+    color: var(--blanco);
 }
 
 .menu {
     display: grid;
-    background-color: #191919;
+    background-color: var(--negroOscuro);
     height: 10vh;
 }
 
@@ -50,7 +59,12 @@ body {
 .menu-contenedor .menu-lista .menu__item a {
     font-size: 1.2vw;
     margin-left: 2vw;
-    color: rgb(218, 218, 219);
+    color: var(--blanco);
+}
+
+.menu__item--active a{
+    font-weight: bold;
+    border-bottom: 1px solid var(--blanco);
 }
 
 .pagina-principal {
@@ -99,7 +113,7 @@ body {
 
 .contenido__descripcion {
     font-size: 1.2vw;
-    color: rgb(155, 156, 157);
+    color: var(--grisClaro);
     letter-spacing: 1px;
 }
 
@@ -119,15 +133,13 @@ body {
 
 
 .contenido-habilidades::-webkit-scrollbar-track {
-    background: rgb(29, 30, 32);
+    background: var(--negroClaro);
     /* color of the tracking area */
 }
 
 .contenido-habilidades::-webkit-scrollbar-thumb {
-    background-color: #191919;
-    /* color of the scroll thumb */
+    background-color: var(--negroOscuro);
     border-radius: 2vw;
-    /* roundness of the scroll thumb */
 }
 
 .habilidades-grilla {
@@ -178,7 +190,7 @@ body {
         "boton boton";
     height: 30vh;
     border-radius: 2%;
-    background-color: #191919;
+    background-color: var(--negroOscuro);
     color: azure;
     width: 25vw;
     padding: 1vw;
@@ -188,7 +200,7 @@ body {
     grid-area: icono;
     text-align: start;
     font-size: 2.5vw;
-    color: #FFC857;
+    color: var(--amarillo);
 }
 
 .proyectos-grilla .tarjeta .tarjeta-icono img {
@@ -225,6 +237,8 @@ body {
 .proyectos-grilla .tarjeta .tarjeta__descripcion {
     font-size: 0.95vw;
     line-height: 1.5;
+    color: var(--grisClaro);
+
 }
 
 .proyectos-grilla .tarjeta .tarjeta-enlace {
@@ -237,7 +251,7 @@ body {
 
 .proyectos-grilla .tarjeta .tarjeta-enlace a {
     font-size: 0.95vw;
-    color: rgb(155, 156, 157);
+    color: var(--verde);
 }
 
 /* CONTENIDO REDES */
@@ -246,7 +260,7 @@ body {
     display: grid;
     align-items: center;
     height: 20vh;
-    background-color: #191919;
+    background-color: var(--negroOscuro);
 }
 
 .contenido-redes {
@@ -263,11 +277,11 @@ body {
 }
 
 .redes-texto p{
-    font-size: 0.7vw;
+    font-size: 0.9vw;
 }
 
 .redes-texto a{
-    color:rgb(155, 156, 157);
+    color:var(--grisClaro);
 }
 
 .redes-tarjetas .tarjeta {
@@ -278,7 +292,7 @@ body {
 
 .redes-tarjetas .tarjeta-icono i {
     font-size: 1.7vw;
-    color: aliceblue;
+    color: var(--blanco);
 }
 
 
@@ -358,7 +372,7 @@ body {
     }
 
     .habilidad .habilidad__imagen {
-        height: 15vh;
+        height: 10vh;
         width: auto;
     }
 
@@ -390,9 +404,8 @@ body {
             "boton boton";
         height: 35vh;
         border-radius: 2%;
-        background-color: #191919;
-        color: azure;
-        width: 83vw;
+        background-color: var(--negroOscuro);
+        width: 85vw;
         padding: 3vw;
     }
 
@@ -434,8 +447,9 @@ body {
     }
 
     .proyectos-grilla .tarjeta .tarjeta__descripcion {
-        font-size: 3.5vw;
+        font-size: 4vw;
         line-height: 1.5;
+        color: var(--grisClaro);
     }
 
     .proyectos-grilla .tarjeta .tarjeta-enlace {
@@ -447,7 +461,6 @@ body {
     }
 
     .proyectos-grilla .tarjeta .tarjeta-enlace a {
-        color: #59bd85;
         font-size: 3.5vw;
     }
 
@@ -468,6 +481,7 @@ body {
 
     .contenido-redes {
         padding: 0;
+        row-gap: 3vh;
     }
 
     .redes-tarjetas {
@@ -484,5 +498,9 @@ body {
     .redes-tarjetas .tarjeta-icono i {
         font-size: 8vw;
         color: aliceblue;
+    }
+
+    .redes-texto p {
+        font-size: 3.5vw;
     }
 }
