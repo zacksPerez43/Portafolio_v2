@@ -121,28 +121,28 @@ body {
 
 .contenido-habilidades {
     grid-area: habilidades;
-    width: auto;
-    overflow-y: auto;
 
 }
 
-.contenido-habilidades::-webkit-scrollbar {
+.habilidades-grilla::-webkit-scrollbar {
     height: 1.5vh;
     /* Tamaño del scroll en horizontal */
 }
 
 
-.contenido-habilidades::-webkit-scrollbar-track {
+.habilidades-grilla::-webkit-scrollbar-track {
     background: var(--negroClaro);
     /* color of the tracking area */
 }
 
-.contenido-habilidades::-webkit-scrollbar-thumb {
+.habilidades-grilla::-webkit-scrollbar-thumb {
     background-color: var(--negroOscuro);
     border-radius: 2vw;
 }
 
 .habilidades-grilla {
+    width: 55vw;
+    overflow-y: auto;
     display: flex;
     column-gap: 2vw;
 }
