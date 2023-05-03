@@ -360,6 +360,7 @@ body {
         align-items: center;
         column-gap: 5vw;
         flex-direction: row;
+        width: 90vw;
     }
 
     .habilidad .habilidad-titulo {

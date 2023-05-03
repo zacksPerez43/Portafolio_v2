@@ -212,3 +212,212 @@ body {
     font-size: 1.7vw;
     color: var(--blanco);
 }
+
+@media only screen and (max-width: 600px) {
+
+    .pagina-principal {
+        margin-right: 0vw;
+        margin-left: 0vw;
+        margin-bottom: 5vh;
+    }
+
+    .menu {
+        height: 20vh;
+    }
+
+    .menu-contenedor {
+        display: grid;
+        grid-template-areas:
+            "titulo"
+            "enlaces";
+        margin-left: 5vw;
+        row-gap: 0vh;
+    }
+
+    .menu-contenedor .menu-titulo .menu__titulo {
+        font-size: 8vw;
+    }
+
+    .menu-contenedor .menu-lista .menu__item a {
+        font-size: 5vw;
+        margin-left: 3vw;
+    }
+
+    .principal-grilla {
+        margin-top: 5vh;
+        margin-right: 5vw;
+        margin-left: 5vw;
+        row-gap: 5vh;
+    }
+
+    .contenido-informacion {
+        grid-template-areas:
+            "imagen"
+            "nombre"
+            "descripcion";
+    }
+
+    .contenido-imagen {
+        display: none;
+    }
+
+    .contenido__nombre {
+        font-size: 8vw;
+    }
+
+    .contenido__descripcion {
+        font-size: 5vw;
+    }
+
+
+    /* CONTENIDO HABILIDADES */
+
+    .habilidades-grilla {
+        display: flex;
+        align-items: center;
+        column-gap: 5vw;
+        flex-direction: row;
+    }
+
+    .habilidad .habilidad-titulo {
+        display: grid;
+        justify-content: center;
+    }
+
+    .habilidad .habilidad__titulo {
+        font-size: 5vw;
+    }
+
+    .habilidad .habilidad__imagen {
+        height: 10vh;
+        width: auto;
+    }
+
+    /* CONTENIDO PROYECTOS */
+
+    .proyectos-grilla {
+        display: grid;
+        grid-template-areas:
+            "titulo"
+            "tarjetas";
+        row-gap: 2vh;
+    }
+
+    .proyectos-grilla .tarjetas {
+        display: flex;
+        grid-area: tarjetas;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 3vw;
+        row-gap: 3vw;
+    }
+
+    .proyectos-grilla .tarjeta {
+        display: grid;
+        grid-template-areas:
+            "icono lenguaje"
+            "titulo titulo"
+            "descripcion descripcion"
+            "boton boton";
+        height: 35vh;
+        border-radius: 2%;
+        background-color: var(--negroOscuro);
+        width: 85vw;
+        padding: 3vw;
+    }
+
+    .proyectos-grilla .tarjeta .tarjeta-icono {
+        grid-area: icono;
+        text-align: start;
+        font-size: 8vw;
+        color: #FFC857;
+    }
+
+    .proyectos-grilla .tarjeta .tarjeta-icono img {
+        height: 7vh;
+        width: auto;
+    }
+
+    .proyectos-grilla .tarjeta .tarjeta-lenguaje {
+        grid-area: lenguaje;
+        margin-top: 1.5vh;
+        text-align: end;
+    }
+
+    .proyectos-grilla .tarjeta .tarjeta__lenguaje {
+        font-size: 4vw;
+    }
+
+    .proyectos-grilla .tarjeta .tarjeta-titulo {
+        grid-area: titulo;
+        text-align: start;
+    }
+
+    .proyectos-grilla .tarjeta .tarjeta__titulo {
+        text-transform: uppercase;
+        font-size: 5vw;
+    }
+
+    .proyectos-grilla .tarjeta .tarjeta-descripcion {
+        grid-area: descripcion;
+        text-align: start;
+    }
+
+    .proyectos-grilla .tarjeta .tarjeta__descripcion {
+        font-size: 4vw;
+        line-height: 1.5;
+        color: var(--grisClaro);
+    }
+
+    .proyectos-grilla .tarjeta .tarjeta-enlace {
+        text-align: start;
+        grid-area: boton;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .proyectos-grilla .tarjeta .tarjeta-enlace a {
+        font-size: 3.5vw;
+    }
+
+    .redes-tarjetas .tarjeta {
+        display: grid;
+        column-gap: 5vw;
+        align-items: center;
+    }
+
+    /* CONTENIDO REDES */
+
+    .footer {
+        display: grid;
+        align-items: center;
+        height: 20vh;
+        background-color: #191919;
+    }
+
+    .contenido-redes {
+        padding: 0;
+        row-gap: 3vh;
+    }
+
+    .redes-tarjetas {
+        display: flex;
+        justify-content: center;
+        column-gap: 5vw;
+    }
+
+    .redes-tarjetas .tarjeta {
+        display: grid;
+        align-items: center;
+    }
+
+    .redes-tarjetas .tarjeta-icono i {
+        font-size: 8vw;
+        color: aliceblue;
+    }
+
+    .redes-texto p {
+        font-size: 3.5vw;
+    }
+}
