@@ -74,7 +74,6 @@ body {
     margin-bottom: 10vh;
 }
 
-
 /* Contenido información */
 
 .principal-grilla {
@@ -121,8 +120,12 @@ body {
 
 .contenido-habilidades {
     grid-area: habilidades;
+}   
 
+.contenido-habilidades h1{
+    font-size: 2vw;
 }
+
 
 .habilidades-grilla::-webkit-scrollbar {
     height: 1.5vh;
@@ -238,7 +241,6 @@ body {
     font-size: 0.95vw;
     line-height: 1.5;
     color: var(--grisClaro);
-
 }
 
 .proyectos-grilla .tarjeta .tarjeta-enlace {
@@ -361,6 +363,10 @@ body {
         column-gap: 5vw;
         flex-direction: row;
         width: 90vw;
+    }
+
+    .contenido-habilidades h1{
+        font-size: 7vw;
     }
 
     .habilidad .habilidad-titulo {
